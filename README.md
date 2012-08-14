@@ -1,24 +1,15 @@
-# ReadMe
+# UriBox README
 
+A Rails App build with all the "state of the art" resources and techniques available.
 
-## Deployment
+## Bootstrap
+
+The bootstrap was carried out using [App Scrolls](http://appscrolls.org) gem with the following command:
 
 ```
-ey deploy
+scrolls new uribox -s jquery sqlite3 twitter_bootstrap rspec capybara
 ```
-Remove
-## Thanks
 
-The original scaffold for this application was created by [App Scrolls](http://appscrolls.org).
+## Maintainers
 
-The project was created with the following scrolls:
-
-* rspec
-* capybara
-* jquery
-* passenger
-* rails_basics
-* twitter_bootstrap
-* simple_form
-* sqlite3
-
+* [Juan Maria Martinez Arce](https://github.com/jmax)
