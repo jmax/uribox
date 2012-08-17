@@ -48,8 +48,13 @@
           <div class="container nav-collapse">
             <ul class="nav">
               <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <% unless user_signed_in? %>
+                <li><%= link_to "Join",  join_path  %></li>
+                <li><%= link_to "Login", login_path  %></li>
+              <% end -%>
+              <% if user_signed_in? %>
+                <li><%= link_to "Logout", logout_path, method: :delete %></li>
+              <% end -%>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

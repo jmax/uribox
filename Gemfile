@@ -19,3 +19,5 @@ end
 
 gem "jquery-rails",              '2.0.2'
 gem "simple_form",               '2.0.2'
+gem "devise",                    '2.1.2'
+gem "strong_parameters",         '0.1.3'
