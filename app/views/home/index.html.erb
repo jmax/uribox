@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<div class="hero-unit">
+  <h1>Welcome to UriBox!</h1>
+
+  <p>Sharing knowledge between coworkers couldn't be easier now.</p>
+
+  <p>
+    <%= link_to( "Join now. It's totally free!", join_path,
+          :id    => "join-now", :class => "btn btn-primary btn-large" ) %>
+  </p>
+</div>
