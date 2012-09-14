@@ -4,9 +4,10 @@ Uribox::Application.routes.draw do
   }
 
   devise_scope :user do
-    get    "login",  to: "devise/sessions#new"
-    delete "logout", to: "devise/sessions#destroy"
-    get    "join",   to: "devise/registrations#new"
+    get    "login",           to: "devise/sessions#new"
+    delete "logout",          to: "devise/sessions#destroy"
+    get    "join",            to: "devise/registrations#new"
+    get     "reset-password", to: "users/passwords#new"
   end
 
   root to: 'home#index'
