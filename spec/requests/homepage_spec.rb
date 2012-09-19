@@ -38,6 +38,14 @@ describe "Home Page" do
   end
 
   context "with a logged in user" do
+    before(:each) do
+      sign_in_with_an_existing_user
+    end
 
+    context "Main Navigation" do
+      it "displays a link to logout" do
+        find(".navbar").find("ul.nav").find(".login").should have_content("Logout")
+      end
+    end
   end
 end

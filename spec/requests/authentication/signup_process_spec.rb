@@ -126,12 +126,7 @@ describe "Sign up Process" do
 
   describe "With a logged in User" do
     before(:each) do
-      Goodies.create_a_user!.tap do |user|
-        visit '/login'
-        fill_in "user_email",    with: user.email
-        fill_in "user_password", with: user.password
-        click_button "Sign in"
-      end
+      sign_in_with_an_existing_user
     end
 
     context "visiting join page" do
